@@ -258,6 +258,9 @@ vendor/lib/libmmcamera_isp_sce40.so
 vendor/lib/libmmcamera_isp_snr47.so
 vendor/lib/libmmcamera_isp_sub_module.so
 
+# DASH
+-sbin/dashd:rootfs
+
 # CNE
 bin/cnd
 etc/cne/SwimConfig.xml
