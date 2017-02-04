@@ -21,17 +21,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from oneplus3 device
 $(call inherit-product, device/oneplus/oneplus3/device.mk)
 
-# Inherit some common Validus stuff.
-$(call inherit-product, vendor/validus/config/common_full_phone.mk)
-$(call inherit-product, vendor/validus/config/caf_fw.mk)
+# Inherit some common Tesla stuff.
+$(call inherit-product, vendor/tesla/config/common_full_phone.mk)
+$(call inherit-product, vendor/tesla/config/caf_fw.mk)
 
-PRODUCT_NAME := validus_oneplus3
+PRODUCT_NAME := tesla_oneplus3
 PRODUCT_DEVICE := oneplus3
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-	DEVICE_MAINTAINERS="Martin Coulon(Martinusbe)"
 TARGET_VENDOR := oneplus
