@@ -90,6 +90,7 @@ void init_alarm_boot_properties()
 
 void load_op3(const char *model) {
     property_set("ro.product.model", model);
+    property_set("ro.battery.capacity", "3000");
     property_set("ro.build.product", "OnePlus3");
     property_set("ro.product.device", "OnePlus3");
     property_set("ro.build.description", "OnePlus3-user 7.1.1 NMF26F 30 dev-keys");
@@ -98,6 +99,7 @@ void load_op3(const char *model) {
 
 void load_op3t(const char *model) {
     property_set("ro.product.model", model);
+    property_set("ro.battery.capacity", "3400");
     property_set("ro.build.product", "OnePlus3");
     property_set("ro.product.device", "OnePlus3T");
     property_set("ro.build.description", "OnePlus3-user 7.1.1 NMF26F 37 dev-keys");
